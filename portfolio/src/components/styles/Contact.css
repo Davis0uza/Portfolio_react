@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* Fonte padrão para todo o site */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Peso normal */
+}
+
+/* Fonte Roboto Thin especificamente para <h2> */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100; /* Roboto Thin */
+}
+
+/* Outros pesos para personalização */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Negrito moderado */
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Leve */
+}
+
+.contact-page {
+  padding: 20px;
+  background-color: #3b3b42;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-right: 20%;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Espaçamento entre a lista de cargos e a imagem */
+}
+
+.contact-roles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  align-items: flex-end; /* Alinha os elementos à direita */
+  text-align: right; 
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #c6c8e8;
+  font-weight: 5;
+}
+
+.contact-image {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.contact-request-quote {
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #4b4b4c;
+  color: #9d9898;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.contact-form-container {
+ 
+  padding: 50px;
+  background-color: #4b4b4c;
+  color: #cbcbcb;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 650px;
+  padding-left: 25px;
+  
+}
+
+.contact-input,
+.contact-select,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #9d9898;
+  border-radius: 5px;
+  background-color: #4b4b4c;
+}
+
+.contact-textarea {
+  height: 120px;
+}
+
+.contact-send-button {
+  padding: 10px 30px;
+  background-color: #4b4b4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+  }
+
+  .contact-roles-container {
+    font-size: 1.2rem; /* Reduz o tamanho do texto na lista de cargos */
+    line-height: 1.6rem; /* Ajusta o espaçamento entre linhas */
+  }
+
+  .contact-image {
+    max-width: 200px; /* Reduz a largura da imagem */
+    height: auto; /* Mantém a proporção */
+  }
+
+  .contact-request-quote {
+    font-size: 1rem; /* Reduz o tamanho do botão */
+    padding: 8px 20px; /* Ajusta o preenchimento do botão */
+  }
+
+  .contact-form-container {
+    max-width: 90%; /* Diminui a largura máxima */
+    padding: 20px; /* Reduz o preenchimento */
+  }
+
+  .contact-input,
+  .contact-select,
+  .contact-textarea {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte nos campos */
+    padding: 8px; /* Ajusta o preenchimento dos campos */
+  }
+
+  .contact-textarea {
+    height: 100px; /* Reduz a altura do campo de texto */
+  }
+
+  .contact-send-button {
+    font-size: 1rem; /* Reduz o tamanho do botão de envio */
+    padding: 8px 20px; /* Ajusta o preenchimento */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.5rem; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .contact-roles-container {
+    font-size: 1rem; /* Texto menor para telas muito pequenas */
+  }
+
+  .contact-image {
+    max-width: 150px; /* Reduz a largura da imagem para telas menores */
+  }
+
+  .contact-request-quote {
+    font-size: 0.9rem; /* Botão menor */
+    padding: 6px 15px; /* Ajusta o preenchimento */
+  }
+
+  .contact-form-container {
+    max-width: 95%; /* Ajusta a largura do formulário */
+    padding: 15px; /* Reduz o preenchimento */
+  }
+
+  .contact-input,
+  .contact-select,
+  .contact-textarea {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    padding: 6px; /* Ajusta o preenchimento dos campos */
+  }
+
+  .contact-textarea {
+    height: 80px; /* Ajusta a altura do campo de texto */
+  }
+
+  .contact-send-button {
+    font-size: 0.9rem; /* Botão menor */
+    padding: 6px 15px; /* Ajusta o preenchimento */
+  }
+}

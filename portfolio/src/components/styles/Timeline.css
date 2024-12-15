@@ -1,0 +1,115 @@
+/* Seção Timeline */
+.timeline-section {
+    padding: 50px 50px;
+    background-color: rgb(43, 42, 50); /* Fundo cinza escuro */
+    color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1305px;
+    margin: 5px auto;
+  }
+  
+  .timeline-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Estrutura da Timeline */
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espaçamento maior entre itens */
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px; /* Linha mais grossa */
+    height: 100%;
+    background: linear-gradient(to bottom,#727d96,#4b4b4c); /* Gradiente */
+    z-index: 0;
+  }
+  
+  /* Cada Item da Timeline */
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .timeline-company {
+    flex: 1; /* Para permitir ajuste automático */
+    margin-left: 8%; /* Espaçamento à esquerda da linha */
+    max-width: 30%;
+    background: rgba(60, 59, 67, 0.252);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(181, 181, 181);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .timeline-company.expanded {
+    max-width: 100%; /* Expande para toda a largura ao clicar */
+    padding: 40px;
+    margin-left: 2%;
+    background-color: rgb(60, 59, 67);
+  }
+  
+  .timeline-company:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    background: rgba(60, 59, 67);
+  }
+  
+  .timeline-company button {
+    background: none;
+    border: none;
+    color: #8998b7;;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .timeline-company button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pontos da Timeline */
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 0; /* Garante alinhamento com o início do contêiner */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #8998b7;
+    border: 4px solid #4b4b4c; /* Cor dos pontos */
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 2s ease, transform 2s ease;
+  }
+  
+  .timeline-item:before:hover {
+    background: #ffd700;
+    transform: scale(1.2);
+  }
+  
+  /* Anos na Direita */
+  .timeline-year {
+    position: absolute;
+    top: -5px; /* Alinha com o topo do contêiner */
+    left: 75%; /* Move os anos para fora */
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #8998b7;
+    text-align: center;
+  }
+  

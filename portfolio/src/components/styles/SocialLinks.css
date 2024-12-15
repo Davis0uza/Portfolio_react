@@ -1,0 +1,46 @@
+/* Seção Social Links */
+.social-links-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os botões */
+  background: rgb(43, 42, 50); /* Cor do fundo */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  padding: 20px;
+}
+
+/* Botão Estilizado */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  background: rgb(75, 74, 88);
+  border: none;
+  color: #efeff0; 
+  padding: 10px 20px;
+  border-radius: 8px; 
+  text-decoration: none;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.button .icon {
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #c6c8e8, #4b4b4c); 
+}

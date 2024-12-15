@@ -1,0 +1,86 @@
+/* Fundo do Site */
+body {
+    background-color: #3b3b42; /* Cinza suave */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  /*Titulo*/
+  .about-section h1{
+    margin-right: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    align-items: left;
+    gap: 15px;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  /* Seção Sobre Mim */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 20px;
+    min-height: 100px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    background: rgb(43, 42, 50);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px;
+    width: 80%;
+  }
+  
+  /* Foto do Perfil */
+  .profile-picture {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 4px solid #333; /* Bordas da imagem */
+  }
+  
+  /* Detalhes Sobre Mim */
+  .about-details {
+    flex: 1;
+  }
+  
+  .about-details h2 {
+    margin: 10px;
+    color: rgb(211, 211, 211);
+    font-size: 2rem;
+    text-align: left;
+  }
+  
+  .about-details h4 {
+    margin: 10px;
+    color: rgb(137, 152, 183);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .about-details h5 {
+    margin: 10px;
+    color: rgb(199, 199, 200);
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .about-details p {
+    margin: 10px;
+    color: rgb(157, 157, 158);
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  

@@ -1,0 +1,50 @@
+/* Configurações Globais */
+.header {
+    position: sticky; /* Fixa no topo ao rolar */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navbar Estilo */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+    background: linear-gradient(to bottom, rgb(39, 38, 46), transparent);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Logo */
+  .logo {
+    color: rgb(211, 211, 211);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover {
+    color: #8998b7; /* Amarelo Ouro */
+  }
+  
+  /* Efeito de Opacidade ao Rolar */
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
