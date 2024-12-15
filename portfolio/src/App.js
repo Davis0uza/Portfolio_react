@@ -1,23 +1,48 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import About from './components/About';
+import Timeline from './components/Timeline';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import SocialLinks from './components/SocialLinks';
+import Contact from './components/Contact';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  const renderSection = () => {
+    switch (activeSection) {
+      case 'contact':
+        return <Contact />;
+      case 'home':
+        return (
+          <>
+            <About />
+            <SocialLinks />
+            <Timeline />
+          </>
+        );
+      case 'projects':
+        return <Projects />;
+      default:
+        return (
+          <>
+            <About />
+            <SocialLinks />
+            <Timeline />
+          </>
+        );
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setActiveSection={setActiveSection} />
+      <main>
+        {renderSection()}
+      </main>
+      <Footer />
     </div>
   );
 }
