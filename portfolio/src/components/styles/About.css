@@ -1,6 +1,8 @@
 /* Fundo do Site */
 body {
-    background-color: #3b3b42; /* Cinza suave */
+    /*background-color: #3b3b42;  Cinza suave */
+    background: url('../photos/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
   }

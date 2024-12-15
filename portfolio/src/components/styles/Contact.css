@@ -24,7 +24,7 @@ p {
 
 .contact-page {
   padding: 20px;
-  background-color: #3b3b42;
+ /* background-color: #3b3b42;*/
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -78,7 +78,7 @@ p {
   padding: 10px 30px;
   font-size: 1.2rem;
   background-color: #4b4b4c;
-  color: #9d9898;
+  color: rgb(137, 152, 183);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -89,7 +89,7 @@ p {
  
   padding: 50px;
   background-color: #4b4b4c;
-  color: #cbcbcb;
+  color: rgb(137, 152, 183);
   border-radius: 10px;
   width: 90%;
   max-width: 650px;
@@ -106,6 +106,7 @@ p {
   border: 1px solid #9d9898;
   border-radius: 5px;
   background-color: #4b4b4c;
+  color: #c6c8e8;
 }
 
 .contact-textarea {
@@ -115,7 +116,7 @@ p {
 .contact-send-button {
   padding: 10px 30px;
   background-color: #4b4b4c;
-  color: white;
+  color: rgb(137, 152, 183);
   border: none;
   border-radius: 5px;
   cursor: pointer;

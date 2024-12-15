@@ -145,7 +145,7 @@ const Projects = () => {
       {
         id: 4,
         title: 'Jogo Habitat da Raposa',
-        category: 'Prototipagem e Frontend Design',
+        category: 'C#, Unity, 2Ddev',
         date: '14/06/2024',
         description: 'Desenvolvi um jogo temático sobre o habitat das raposas, um desafio simples e provocador onde o jogador coleta objetos no mapa enquanto procura a saída. Com uma jogabilidade desafiante, o jogo promete testar a paciência até dos mais experientes, mas, para os novatos, fica a garantia: "Sim! É possível passar de nível." O projeto foi criado em **Unity2D**, utilizando **C#** como linguagem principal. Foram integrados recursos gratuitos do **Unity Assets**, como o pacote **Sunnylands**, para cenários e personagens. A programação envolveu a gestão de níveis, mapeamento da HUD e um gestor do jogo para controlar a lógica central. Para enriquecer a experiência, também foi adicionada uma trilha sonora.',
         images: [
@@ -162,7 +162,7 @@ const Projects = () => {
       {
         id: 2,
         title: 'SmartShop para Eventos',
-        category: 'Prototipagem e Frontend Design',
+        category: 'C#, Unity, HUD Design',
         date: '17/04/2024',
         description: 'No âmbito da disciplina de Conteúdos Interativos 2, desenvolvi um projeto em Unity2D utilizando C#, que consiste num SmartShop interativo voltado para eventos. A aplicação é multinível e oferece funcionalidades como um sistema de carrinho de compras, uma galeria de imagens e vídeos dos produtos e uma página dedicada a classificações',
         images: [
@@ -177,7 +177,7 @@ const Projects = () => {
       {
         id: 1,
         title: 'Website de Minijogos/Fichas',
-        category: 'Prototipagem e Frontend Design',
+        category: 'C#, Unity, HUD Design',
         date: '29/03/2024',
         description: 'No contexto da disciplina de Conteúdos Interativos 2, desenvolvi um website que reúne um conjunto de minijogos criados com base nas fichas práticas realizadas em aula.',
         images: [
@@ -191,7 +191,7 @@ const Projects = () => {
         id: 0,
         title: 'GAPA projeto para Softinsa (IBM)',
         category: 'Java, ASP.NET, C#, HTML, JAVASCRIPT',
-        date: 'Atualmente em Progresso',
+        date: '16/07/2017',
         description: 'Projeto GAPA (Gestão de Acesso a Parque de Automóveis). Uma app móvel para Android, que permite ao utilizador abrir o portão do parque de estacionamento (Java, Webservices) em conjunto com um WebSite de Administração para acesso as câmeras de segurança e logs de entradas e saídas do parque (C#, ASPX, CSS, HTML, Javascript, Webservices e integração com o software das câmeras). Controle de portões com Raspberry Pi (Phyton, Webservices).',
         images: [
           require('./photos/GAPA.png'),

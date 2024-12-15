@@ -72,7 +72,7 @@ const Contact = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h3>Envie-nos um e-mail</h3>
+          <h3>Envie um e-mail</h3>
           <input
             type="text"
             id="name"
